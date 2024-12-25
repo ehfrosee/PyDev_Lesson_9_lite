@@ -9,7 +9,7 @@ class Product:
         self.price = price
 
     def get_details(self):
-        return f"Продукт: {self.name}, Цера: {self.price} руб."
+        return f"Продукт: {self.name}, Цена: {self.price} руб."
 
 class Electronics(Product):
     """
@@ -44,4 +44,6 @@ class Household_Chemicals(Product):
         self.size = size
         self.composition = composition
 
+    def get_details(self):
+        return f"Бытовая химия: {self.name}, Цена: {self.price} руб, Объём: {self.size}, Состав: {self.composition}"
 
